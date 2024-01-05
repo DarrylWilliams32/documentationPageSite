@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+  font-size: large;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    padding: 10px;
+    margin-left: 10px;
+}
+/*creates rules for nav bar*/
+.side-nav {
+    height: 100vh; /* 100% of the viewport height */
+    width: 150px; /* Adjust the width as needed */
+    background-color: #333;
+    padding-top: 20px; /* Optional: Add space at the top */
+    position: relative; /* Fixed position so it stays in place */
+    position: sticky;
+    left: 0;
+    top: 0;
+  }
+  
+  .side-nav a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  .side-nav a:hover {
+    background-color: #555;
+  }
+
+/*creates rules for container styling*/  
+.code-example {
+    background-color: lightgray;
+}
+
+.pic-container {
+    background-color: lightgray;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+  
+}

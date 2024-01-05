@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Darryl W.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <div class="container">
+        <nav class="side-nav" id="navbar">
+            <header>Navigate Site</header>
+            <a href="#Setting_up_HTML_document" class="nav-link">Setting up HTML document</a>
+            <a href="#Write_your_first_message" class="nav-link">Write your first message</a>
+            <a href="#Add_a_header" class="nav-link">Add a header</a>
+            <a href="#Organizing_information" class="nav-link">Organizing information</a>
+            <a href="#Adding_media" class="nav-link">Adding media</a>
+        </nav>
+        <div class="content">
+    <header>
+        <h1>Introduction</h1>
+        <p>HTML (Hyper Text Markup Language) is the primary building block of nearly all websites on the internet. It is this reason that it's imparitive that you learn how to use it. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.</p>
+    </header>
+    <main id="main-doc">
+        <!--Creates a Nav bar-->
+    
+    <section class="main-section" id="Setting_up_HTML_document">
+        <header>
+            Setting up HTML document
+        </header>
+        <p>Before you can start writing on your html document, you must first let your computer know that this is the document type you are looking to edit. To do this, you must create an html document in your text editor of choice- we wont cover how to do that here. Secondly, you must put the appropriate heading on the document that establishes the 'Document type'. This can be achieved with the following:</p>
+            <div class="code-example">
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                </code>
+            </div>
+                <p>Here, the &lt;!DOCTYPE html&gt; tag is used to tell the computer that this is an html document. This is the first thing that should be written on your document, and should be written on the first line.</p>
+                <p>Once you've put the appropriate heading, you can now edit this document as html. There are some additional tags that are both useful, and industry standard to make your document more readable, accessible, and styleable.</p>
+                    <ul>
+                        <li>
+                            <p>&lt;html&gt; : This tag should encapsulate the entirety of the document. Best practice is to place it directly below your &lt;!DOCTYPE&gt; tag and then at the end of the document.</p>
+                        </li>
+                        <li>
+                            <p>&lt;head&gt; : This tag should encapsulate the metadata of the document. This includes the title, links to stylesheets, and other information that is not displayed on the page.</p>
+                        </li>
+                        <li>
+                            <p>&lt;body&gt; : This tag should encapsulate the content of the document. This includes the text, images, and other information that is displayed on the page.</p>
+                        </li>
+                        <li>
+                            <p>&lt;title&gt; : This tag should encapsulate the title of the document. This is the text that will be displayed on the tab of the browser.</p>
+                        </li>
+                        <li>
+                            <p>&lt;link&gt; : This tag should be used to link to stylesheets. This is the best way to style your document, and is the industry standard.</p>
+                        </li>
+                        </ul>
+
+            </section>
+    <section class="main-section" id="Write_your_first_message">
+        <header>
+            Write your first message
+        </header>
+        <p>HTML serves as the framework for many sites an applications, so lets cover the basics first.</p>
+        <p>Let's learn how to print your first message to the world!</p>
+            <div class="code-example">
+                <code>
+                    &lt;p&gt;Hello World&lt;/p&gt;
+                </code>
+            </div>
+                <p>Here, the &lt;p&gt; tag is used to create a paragraph to that will be printed to the screen. These are a great way to display messages and information on your website. These are best fit for when you have a paragraph you want to display, but shouldn't be used as headers or titles - which we will cover later.</p>
+    </section>
+    <section class="main-section" id="Add_a_header">
+        <header>
+            Add a header
+        </header>
+        <p>Headers are a great way to display titles and subtitles on your website. Titles can be a great way to let your user know what the following paragraph or section is going to be about.</p>
+        <p>Let's learn how to add a header to your website!</p>
+            <div class="code-example">
+                <code>
+                    &lt;h1&gt;This is a header&lt;/h1&gt;
+                </code>
+            </div>
+                <p>Here, the &lt;h1&gt; tag is used to create a header. This is the largest header you can create, and should be used for titles and subtitles. If you want to create a smaller header, you can use the &lt;h2&gt; tag, and so on.</p>
+    </section>
+    <section class="main-section" id="Organizing_information">
+        <header>
+            Organizing information
+        </header>
+        <p>There will be times that you need to display information to a user in the form of a table or graph - we will cover the former here.<br> Tables are a simple and effective way to organize information for the user to read. These can be used to create:</p>
+            <ul>
+                <li>calendars</li>
+                <li>charts</li>
+                <li>graphs</li>
+                <li>and more!</li>
+            </ul>
+        <p>There is a variety of HTML tags that you'll use to create a table and they are: 
+            &lt;table&gt;, &lt;h1&gt;</p>
+            <ul>
+                <li>&lt;table&gt;: <i>table</i> is the first tag of a table and it must encapsulate all the information that you wish to display within.</li>
+                <li>&lt;tr&gt;: <i>table row</i> is used to create rows within your table</li>
+                <li>&lt;td&gt;: <i>table data</i> is a versatile tag in that it can be used to add information to your table and it can be used to create columns within the table. There is no specific tag to make columns and so the table designer must use parameters within the &lt;td&gt; tag to acheive this. </li>
+            </ul>
+        <p>Here is an example of what the code of a table looks like, as well as what the finished product looks like:</p>
+        <code>
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;td colspan="2"&lt;Spanning Two Columns&lt;</td>&lt;
+                    &lt;<td>&lt;Column 3&lt;</td>&lt;
+                &lt;</tr>&lt;
+                &lt;<tr>&lt;
+                    &lt;<td>&lt;Data 1&lt;</td>&lt;
+                    &lt;<td>&lt;Data 2&lt;</td>&lt;
+                    &lt;<td>&lt;Data 3&lt;</td>&lt;
+                &lt;</tr>&lt;
+            &lt;</table>&lt;
+        </code>
+        <p>This code will create a simple table that looks like this:</p>
+        <div class="pic-container">
+        <img src="/DocumentationPageSite/media/table.jpg" class="code-example table-example" width="800px" alt="table example"/>
+        </div>
+    </section>
+    <section class="main-section" id="Adding_media">
+        <header>Adding media</header>
+        <p>Now that you've leared how to display all kinds of text based information, it's time to add more dynamic content. This is where media comes in. There are various kinds of media that you can add to your site such as: images, audio, video, etc</p>
+
+                <h3>Media tags</h3>
+                <p>&lt;img&gt;: the <i>image</i> tag is used to add images to your site. If you are referencing an image that is online outside of your project, you must reference it's destination with <i>href</i>. If you are using an image that is located within your project directory, then you will use <i>src</i> to reference is location.</i></p>
+                <h4>Using external images</h4>
+                <code class="code-example">
+                    &lt;img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"&gt;
+                </code>
+                <br>
+                <h4>Using local images</h4>
+                <code class="code-example">
+                    &lt;img src="/projectfolder/picture.jpg" alt="Mountain"&gt;
+                </code>
+                <p>&lt;audio</p>
+                <p>video</p>
+                <p>etc</p>
+    </section>
+        </div>
+    </div>
+</main>
+</body>
+</html>
